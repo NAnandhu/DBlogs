@@ -25,16 +25,16 @@ const Navbar = () => {
     // const navigate=useNavigate('')
     // const [Output,SetOutput]=useState('')
 
-    const id=document.getElementById('Search').value
-    console.log(id);
-    const provider = new ethers.BrowserProvider(window.ethereum);
-    const signer = await provider.getSigner();
-    const cAbi = BlogABI.abi;
-    const cAddress = BAddress['BlogModule#Blogs'];
-    console.log(cAddress);
-    const BlogInstance = new ethers.Contract(cAddress, cAbi, signer);
-    console.log(BlogInstance);
-    const txtvalue= await BlogInstance.BlogDetails(id)
+    // const id=document.getElementById('Search').value
+    // console.log(id);
+    // const provider = new ethers.BrowserProvider(window.ethereum);
+    // const signer = await provider.getSigner();
+    // const cAbi = BlogABI.abi;
+    // const cAddress = BAddress['BlogModule#Blogs'];
+    // console.log(cAddress);
+    // const BlogInstance = new ethers.Contract(cAddress, cAbi, signer);
+    // console.log(BlogInstance);
+    // const txtvalue= await BlogInstance.BlogDetails(id)
     // console.log(txtvalue[0]);
     // SetOutput(`Name:${txtvalue[0]},Course:${txtvalue[1]},Grade:${txtvalue[2]},Date:${txtvalue[3]}`)
     
@@ -53,8 +53,8 @@ const Navbar = () => {
                 View Blogs
               </Link>
             </li>
-            <li className="flex items-center space-x-2">
-              <input
+            {/* <li className="flex items-center space-x-2"> */}
+              {/* <input
               id='Search'
                 type="text"
                 className="w-52 p-2 rounded-md"
@@ -64,7 +64,7 @@ const Navbar = () => {
               >
                 Search
               </button>
-            </li>
+            </li> */}
             <li>
               <button className="bg-gray-200 p-2 rounded border-2 border-black hover:border-white h-12 text-black"
               onClick={connectMetemask}>

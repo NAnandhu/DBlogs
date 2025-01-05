@@ -103,13 +103,13 @@ import BlogABI from '../assets/Blogs.json';
 import BAddress from '../assets/deployed_addresses.json';
 import { useNavigate } from 'react-router-dom';
 
-const Index = () => {
+const Home = () => {
   const [Output, SetOutput] = useState(null); // State as an object
   const navigate = useNavigate(); // Hook for navigation
 
   async function getCertificate() {
     try {
-      const id = document.getElementById('Search').value; // Get input value
+      const id = document.getElementById('Search').value; 
       console.log(id);
       const provider = new ethers.BrowserProvider(window.ethereum);
       const signer = await provider.getSigner();
@@ -125,11 +125,11 @@ const Index = () => {
 
       // Update the state as an object
       SetOutput({
-        BlogName: txtvalue[0],  // Name
-        Date: txtvalue[1],      // Date
-        Category: txtvalue[2],  // Category
-        Location: txtvalue[3],  // Location
-        Blog: txtvalue[4],      // Blog
+        BlogName: txtvalue[0],  
+        Date: txtvalue[1],      
+        Category: txtvalue[2],  
+        Location: txtvalue[3],  
+        Blog: txtvalue[4],     
       });
       
     } catch (error) {
@@ -170,11 +170,6 @@ const Index = () => {
         <div>
         {Output ? (
   <>
-    {/* <h1>Name: {Output.BlogName}</h1> */}
-    {/* <h1>Date: {Output.Date}</h1>
-    {Output.Category && <h1>Category: {Output.Category}</h1>}
-    {Output.Location && <h1>Location: {Output.Location}</h1>}
-    {Output.Blog && <h1>Blog: {Output.Blog}</h1>} */}
     <div className='w-[600px]  m-auto h-auto rounded border-2 border-black mt-12 shadow-lg shadow-black'>
         <h1 className='text-center text-xl text-black m-3'>Title :{Output.BlogName} </h1>
         <p className=' p-5 '>{Output.Blog}</p>
@@ -187,11 +182,10 @@ const Index = () => {
 ) : (
   <h1>No data available or error occurred</h1>
 )}
-
         </div>
       </body>
     </>
   );
 };
-export default Index;
+export default Home;
 
