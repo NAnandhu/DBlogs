@@ -26,7 +26,7 @@ const Index = () => {
             }}
             startDelay={1000}
             cursorColor="white"
-            multiText={['ConnectMetamashk', 'Add Blogs', 'View Blogs']}
+            multiText={['ConnectMetamask', 'Add Blogs', 'View Blogs']}
             multiTextDelay={1000}
             typeSpeed={100}
             backSpeed={50}

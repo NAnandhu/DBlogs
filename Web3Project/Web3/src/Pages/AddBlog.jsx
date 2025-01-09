@@ -16,7 +16,7 @@ const AddBlog = () => {
     const signer = await provider.getSigner();
     const cAbi = BlogABI.abi;
     const cAddress = BAddress['BlogModule#Blogs'];
-    const BlogInstance = new ethers.Contract(cAddress, cAbi, signer);
+    const BlogInstance = new ethers.Contract(cAddress, cAbi,signer);
     const txnRecepit = await BlogInstance.AddBlogs(blogName, blogContent);
     console.log(txnRecepit);
     if(txnRecepit){
