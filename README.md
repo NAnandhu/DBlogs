@@ -54,11 +54,11 @@ git clone https://github.com/NAnandhu/DBlogs
 cd Web3
 npm install
 npm run dev
+```
+
 ---
-## YouTube Demonstration
 
-Watch the video demonstration here:  
-[**Blogs dApp Demonstration**](https://youtu.be/C2Lx5bCdTpA?si=KVGmpvzYZST9VLJH)
+## Video Demonstration
 
-
+To better understand how to use the Blogs dApp, watch the [YouTube video demonstration For DBlogs](https://youtu.be/C2Lx5bCdTpA?si=KVGmpvzYZST9VLJH).
 
