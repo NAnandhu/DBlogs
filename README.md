@@ -55,4 +55,9 @@ cd Web3
 npm install
 npm run dev
 
-Blogs dApp Demonstration
+## YouTube Demonstration
+
+Watch the video demonstration here:  
+[**Blogs dApp Demonstration**](https://youtu.be/C2Lx5bCdTpA?si=KVGmpvzYZST9VLJH)
+
+
