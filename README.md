@@ -55,7 +55,4 @@ cd Web3
 npm install
 npm run dev
 
-YouTube Video Link :
-https://youtu.be/C2Lx5bCdTpA?si=KVGmpvzYZST9VLJH
-
-
+You can copy and paste this into your `README.md` file. Let me know if you need any further adjustments!
