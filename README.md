@@ -55,4 +55,4 @@ cd Web3
 npm install
 npm run dev
 
-You can copy and paste this into your `README.md` file. Let me know if you need any further adjustments!
+Blogs dApp Demonstration
